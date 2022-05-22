@@ -1,6 +1,8 @@
 .main-content{
     width: 100%;
     display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -8,11 +10,25 @@
 
 .part1{
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
+    flex-wrap: wrap
+    ;
+}
+.part1 img{
+    width: 25rem;
 }
 .part1 .pic1{
-    max-width: 26%;
+    width: 25rem;
 }
+/* .part1 .pic1{ max-width: 30%;}
 .part1 .pic2{ max-width: 30%;}
 .part1 .pic3{ max-width: 30%;}
-.part1 .pic4{ max-width: 30%;}
+.part1 .pic4{ max-width: 30%;} */
+
+.part2{
+    width: 50%;
+    text-align: center;
+}
+.part3 img{
+    width:50rem;
+}
