@@ -6,20 +6,28 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    gap: 4rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+.main-content h1{
+    font-size: 5rem;
+    margin-bottom: 3px;
+}
+.main-content h2{
+    font-size: 3.3rem;
+    margin: 0 auto;
 }
 
 .part1{
     display: flex;
     justify-content: center;
-    flex-wrap: wrap
-    ;
+    align-items: center;
+    flex-wrap: wrap;
 }
 .part1 img{
-    width: 25rem;
+    width: 35rem;
 }
-.part1 .pic1{
-    width: 25rem;
-}
+
 /* .part1 .pic1{ max-width: 30%;}
 .part1 .pic2{ max-width: 30%;}
 .part1 .pic3{ max-width: 30%;}
