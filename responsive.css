@@ -37,6 +37,7 @@
 @media screen and (max-width:562px) {
     .nav nav ul{
         gap: 1rem;
+    }
 }
 @media screen and (max-width:492px) {
      .nav{
@@ -61,4 +62,5 @@
         position: fixed;
         top: 0;
         right: 0;
+    }
 }
