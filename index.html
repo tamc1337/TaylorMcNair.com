@@ -1,53 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taylor McNair, Web Dev from Delware</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
 </head>
+
 <body>
-    <div class="main-content">
-    <h1>My Name is Taylor McNair</h1>
-    <h2>Professional Front End Web Developer</h2>
-    <div class="part1">
-        <div class="pic1"><img src="/images/picture1.jpg" alt="picture of me"></div>
-        <!-- <div class="pic2"><img src="/images/picture2.jpg" alt="picture of me"></div>
+    <div id="home" class="main-content">
+        <div class="nav">
+            <nav>
+                <button class="nav-toggler" aria-expanded="false" aria-controls="navbarDropdown">
+                    <span>&#9776</span>
+                </button>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="title">
+            <h1>My Name is Taylor McNair</h1>
+            <h2>Front End Web Developer</h2>
+        </div>
+        <div class="part1">
+            <div class="pic1"><img src="/images/picture1.jpg" alt="picture of me"></div>
+            The picture will be changed as soon as I stop being so gosh darn adorable in this one. 
+            <!-- <div class="pic2"><img src="/images/picture2.jpg" alt="picture of me"></div>
     </div>
     <div class="part1">
         <div class="pic4"><img src="/images/picture4.jpg" alt="picture of me"></div>
         <div class="pic3"><img src="/images/picture3.jpg" alt="picture of me"></div> -->
-        
 
-    </div>
-    <div class="part2">
-        <h2>My Life story</h2>
-        <p>Born and raised in Plains, Georgia, Carter graduated from the United States Naval Academy in 1946 with a Bachelor of Science degree and joined the United States Navy, serving on numerous submarines. After the death of his father in 1953, he left his naval career and returned home to Plains, where he assumed control of his family's peanut-growing business. He inherited comparatively little due to his father's forgiveness of debts and the division of the estate amongst himself and his siblings. Nevertheless, his ambition to expand and grow the family's peanut farm was fulfilled. During this period, Carter was encouraged to oppose racial segregation and support the growing civil rights movement. <strong>Oh wait! That was <a href="https://en.wikipedia.org/wiki/Jimmy_Carter"> Jimmy Cater</a>, not Taylor McNair! I get them confused sometimes.</strong></p>
-    </div>
-    <div class="part3">
-        <h2>Tech Portfolio</h2>
-        <div class="portfolio">
-            <div class="coderad">
-                <h3>CodeRad</h3>
-                <img src="/images/codeRAD.png" alt="screenshot of coderad">
-                <h4><a href="https://incredible-mooncake-963649.netlify.app/"> Mobile responsive web page using HTML, CSS, and Javascript</a></h4>
+
+        </div>
+        <div class="part2">
+            <h2>My Life story</h2>
+            <p>Born and raised in Plains, Georgia. After the
+                death of his father in 1953, he assumed
+                control of his family's peanut-growing busin- <strong>Oh wait! That was <a href="https://en.wikipedia.org/wiki/Jimmy_Carter"> Jimmy Carter</a>, not Taylor McNair! I get
+                    them confused sometimes.</strong></p>
+            <p>
+               <strong>Taylor McNair</strong> is a Web Developer from Newark, Delaware, who received an Associate's degree from Delaware Tech in 2011 and Bachelor's degree from University of Delaware in 2015. He's since put those pieces of paper in a box somewhere that are in a basement, unused. 
+            </p>
+
+        </div>
+        <div id="portfolio" class="part3">
+            <h2>Tech Portfolio</h2>
+            <div class="portfolio">
+                <div class="coderad">
+                    <h3>CodeRad</h3>
+                    <img src="/images/codeRAD.png" alt="screenshot of coderad">
+                    <h4><a href="https://incredible-mooncake-963649.netlify.app/"> Mobile responsive web page using
+                            HTML, CSS, and Javascript</a></h4>
+                </div>
+                <div class="hideaway">
+                    <h3>Hideaway Farms</h3>
+                    <img src="/images/hideaway.png" alt="Hideaway Farms">
+                    <h4><a href="https://celadon-cactus-5d5100.netlify.app/"> <strong>(WIP)</strong> Mobile responsive
+                            web page using HTML, CSS, and Javascript, done for a client</a></h4>
+                </div>
             </div>
-            <div class="hideaway">
-                <h3>Hideaway Farms</h3>
-                <img src="/images/hideaway.png" alt="Hideaway Farms">
-                <h4><a href="https://celadon-cactus-5d5100.netlify.app/"> <strong>(WIP)</strong> Mobile responsive web page using HTML, CSS, and Javascript, done for a client</a></h4>
+        </div>
+        <div id="contact" class="part4">
+            <h2>Contact information</h2>
+            <div class="contact">
+                <h4 class="maybe-hide"> TheMacnair@hotmail.com </h4>
+                <h4><a href="https://medium.com/@themacnair">My Medium Articles</a></h4>
+                <h4><a href="https://github.com/tamc1337/">Github</a></h4>
+                <h4><a
+                        href="https://en.wikipedia.org/w/index.php?search=taylor+Mcnair&title=Special%3ASearch&go=Go&ns0=1">Wikipedia</a>
+                </h4>
+                <h4><a href="#home">BACK TO THE TOP</a></h4>
             </div>
         </div>
     </div>
-    <div class="part4">
-        <h2>Contact information</h2>
-        <div class="contact">
-            <h4 class="maybe-hide"> TheMacnair@hotmail.com </h4>
-            <h4><a href="https://github.com/tamc1337/">Github</a></h4>
-            <h4><a href="https://en.wikipedia.org/w/index.php?search=taylor+Mcnair&title=Special%3ASearch&go=Go&ns0=1">Wikipedia</a></h4>
-        </div>
-    </div>
-</div>
+    <script>
+         const nav = document.getElementById("topNav");
+        window.onscroll = function () {
+            if (window.pageYOffset > 100) {
+                nav.classList.add("sticky");
+            } else {
+                nav.classList.remove("sticky");
+            }
+        }; 
+        const navButton = document.querySelector('button[aria-expanded]');
+        function toggleNav({ target }) {
+            const expanded = target.getAttribute('aria-expanded') === 'true' || false;
+            navButton.setAttribute('aria-expanded', !expanded);
+        }
+        navButton.addEventListener('click', toggleNav);
+    </script>
 </body>
+
 </html>
