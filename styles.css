@@ -1,10 +1,20 @@
 :root{
-    --greenish:rgba(29, 172, 29, 0.933);
+    --dark-purple:rgba(13, 5, 54, 0.99);
+    --whiteish:rgba(224, 222, 222, 0.9);
+
 }
 
 body{
-    animation: color 6s ease infinite;
+    animation: color 30s ease infinite;
+    margin:0 ;
 }
+h1,
+h2,
+h3,
+h4,
+p,
+h4 a{color: var(--whiteish);}
+
 
 .main-content{
     width: 100%;
@@ -17,16 +27,18 @@ body{
     font-family: 'Courier New', Courier, monospace;
 }
 .main-content h1{
-    font-size: 5rem;
+    font-size: 3rem;
+    margin: 0 auto;
     margin-bottom: 3px;
 }
 .main-content h2{
-    font-size: 3rem;
+    font-size:2rem;
     margin: 0 auto;
 }
 .nav{
-    background-color: black;
-    padding: 1.5rem;
+    background-color: var(--dark-purple);
+    padding: 1.5rem 0;
+    width: 100%;
     align-items: left;
 }
 .nav nav ul{
@@ -37,7 +49,7 @@ body{
     list-style: none;
 }
 .nav a{
-    color: green;
+    color: var(--whiteish);
     text-decoration: none;
     font-size: 2rem;
 }
@@ -51,7 +63,7 @@ body{
     border: 1px solid transparent;
 }
 .nav-toggler span{
-    color: #666;
+    color: var(--whiteish);
     font-size: 2rem;
     cursor: pointer;
     pointer-events: none;
@@ -59,57 +71,58 @@ body{
 [aria-controls="navbarDropdown"]{
     display: none;
 }
-.part1{
-    width: 80%;
+
+.title h1,
+.title h2{
+    margin-bottom: 10px;
+    background-color: var(--dark-purple);
+    border-radius: 10px;
+    padding: 1rem 4rem;
+}
+
+.introduction-wrapper{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    
 }
-h1, h2,.part1,.part2,.part3, .part4{
-    background-color: var(--greenish);
+.introduction-wrapper .pic1{flex: 1;}
+.introduction-wrapper h2{flex: 1;}
+/* h1, h2, */
+.introduction-wrapper,.portfolio-wrapper, .part4{
+    background-color: var(--dark-purple);
     padding: 1rem;
     border-radius: 10px;
     margin: 1rem;
 }
-.part1 img{
+.introduction-wrapper img{
     width: 70%;
 }
-
-/* .part1 .pic1{ max-width: 30%;}
-.part1 .pic2{ max-width: 30%;}
-.part1 .pic3{ max-width: 30%;}
-.part1 .pic4{ max-width: 30%;} */
-
-.part2{
- 
-    text-align: center;
-    margin: 2rem;
-    padding: 1rem;
-}
-.part2 p{
-    font-size: 2rem;
-}
-.part3 img{
+.portfolio-wrapper img{
     width:100%;
 }
-.part3 h3{font-size: 1.8rem;}
-.part3 h4,
+.portfolio-wrapper h2{
+    font-size: 3rem;
+    margin-top: 2rem;
+    text-decoration: underline
+    ;
+}
+.portfolio-wrapper .portfolio h3{
+    margin-top: 5rem;
+}
+.portfolio-wrapper h3{font-size: 1.8rem;}
+.portfolio-wrapper h4,
 .part4 h4{font-size: 1.4rem;}
-/* .maybe-hide{
-    display: none;
-} */
-
 
 
 @keyframes color{
     0%{
-        background: var(--greenish);
+        background: var(--dark-purple);
     }
     50%{
-        background: black;
+        background:var(--whiteish);
     }
     100%{
-        background: var(--greenish);
+        background: var(--dark-purple);
     }
 }

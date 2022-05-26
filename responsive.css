@@ -1,3 +1,10 @@
+@media screen and (min-width:2200px) {
+    .title h1,
+    .title h2,
+    .introduction-wrapper h2{ font-size: 5rem;}
+}
+
+
 @media screen and (max-width:768px) {
     [aria-controls="navbarDropdown"]{
         display: block;
@@ -32,6 +39,11 @@
     .title{
         margin-top: 4rem;
     }
+    .introduction-wrapper{
+        display: block;
+    }
+    .introduction-wrapper img{width: unset;}
+
 
 }
 @media screen and (max-width:562px) {
@@ -41,8 +53,6 @@
 }
 @media screen and (max-width:492px) {
      .nav{
-        /* width: 5rem;
-        height: 9rem; */
         position: fixed;
         top: 0;
         right: 0;
@@ -54,9 +64,15 @@
         position: fixed;
         top: 2rem;
         right: 1rem;
-        background-color: black;
+        background-color: var(--dark-purple);
     }
-
+    .nav a{
+        font-size: 2.5rem;
+    }
+    .nav ul li{
+        border-top: 1px solid var(--whiteish);
+        /* border-bottom: 1px solid var(--whiteish); */
+    }
    
     [aria-controls="navbarDropdown"]{
         position: fixed;
