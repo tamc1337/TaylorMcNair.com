@@ -37,20 +37,28 @@
         top: 0;
     }
     .title{
-        margin-top: 4rem;
+        margin-top: 6rem;
     }
     .introduction-wrapper{
         display: block;
     }
     .introduction-wrapper img{width: unset;}
-
-
+    .portfolio-wrapper{margin-top: 2rem;}
+    .contact-wrapper{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
+
 @media screen and (max-width:562px) {
     .nav nav ul{
         gap: 1rem;
     }
+    .footer{
+        flex-wrap: wrap;
+        justify-content: center;}
 }
+
 @media screen and (max-width:492px) {
      .nav{
         position: fixed;

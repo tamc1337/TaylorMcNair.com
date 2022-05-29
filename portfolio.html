@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taylor McNair, Web Developer Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
+    <script src="https://kit.fontawesome.com/9944bde347.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="home" class="main-content">
+        <div class="nav">
+            <nav>
+                <button class="nav-toggler" aria-expanded="false" aria-controls="navbarDropdown">
+                    <span>&#9776</span>
+                </button>
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="#home">Portfolio</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="title">
+            <h1>Taylor McNair</h1>
+            <h2>Here's my Portfolio</h2>
+        </div>
+        <div id="portfolio" class="portfolio-wrapper">
+            <div class="portfolio">
+                <div class="front">
+                    <h3>Front</h3>
+                    <img src="/images/FrontSaaS.png" alt="Front SaaS">
+                    <h4><a href="https://front-saas.netlify.app/" target="_blank">SaaS
+                            Landing page, click here to link to the
+                            site.</a></h4>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-wrapper">
+            <div class="portfolio">
+                <div class="coderad">
+                    <h3>CodeRad</h3>
+                    <img src="/images/codeRAD.png" alt="screenshot of coderad">
+                    <h4><a href="https://code-rad.netlify.app/" target="_blank"> Mobile responsive web page, click here
+                            to link to the site.</a></h4>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-wrapper">
+            <div class="portfolio"></div>
+            <div class="hideaway">
+                <h3>Hideaway Farms</h3>
+                <img src="/images/hideaway.png" alt="Hideaway Farms">
+                <h4><a href="https://hideaway-farms.netlify.app/" target="_blank">(WIP for current client) Click here to
+                        link to the
+                        site.</a></h4>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="footer">
+        <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/portfolio.html">Portfolio</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+        </ul>
+        <ul>
+            <li>
+                <a href="https://twitter.com/tmcnair2"><i class="fa-brands fa-twitter"></i></a>
+            </li>
+            <li>
+                <a href="https://github.com/tamc1337"><i class="fa-brands fa-github"></i></a>
+            </li>
+            <li>
+                <a href="https://medium.com/@themacnair"><i class="fa-brands fa-medium"></i></a>
+            </li>
+            <li>
+                <a href="mailto:themacnair@hotmail.com"><i class="fa-solid fa-envelope"></i></a>
+            </li>
+
+        </ul>
+    </div>
+    <script>
+        const nav = document.getElementById("topNav");
+        window.onscroll = function () {
+            if (window.pageYOffset > 100) {
+                nav.classList.add("sticky");
+            } else {
+                nav.classList.remove("sticky");
+            }
+        };
+        const navButton = document.querySelector('button[aria-expanded]');
+        function toggleNav({ target }) {
+            const expanded = target.getAttribute('aria-expanded') === 'true' || false;
+            navButton.setAttribute('aria-expanded', !expanded);
+        }
+        navButton.addEventListener('click', toggleNav);
+    </script>
+</body>
+
+</html>

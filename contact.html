@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taylor McNair, Web Developer Contact</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
+    <script src="https://kit.fontawesome.com/9944bde347.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="home" class="main-content">
+        <div class="nav">
+            <nav>
+                <button class="nav-toggler" aria-expanded="false" aria-controls="navbarDropdown">
+                    <span>&#9776</span>
+                </button>
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/portfolio.html">Portfolio</a></li>
+                    <li><a href="#home">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="title">
+            <h1>Taylor McNair</h1>
+            <h2>I'd love to work with you:</h2>
+        </div>
+        <div id="contact" class="contact-wrapper">
+            <div class="contact">
+                <h3>I am open to work doing any of the following projects:</h3>
+                <ul>
+                    <li><h2 class="rainbow1">Website Design</h2></li>
+                    <li><h2 class="rainbow2">Website Maintenance</h2></li>
+                    <li><h2 class="rainbow3">HTML / CSS Tutoring</h2></li>
+                    <li><h2 class="rainbow4">Contract Work</h2></li>
+                    <li><h2 class="rainbow5">Project Assistance</h2></li>
+                </ul>
+                <h3>Pricing is determined after initial meetings, feel free to contact me to schedule a call!</h3>
+            </div>
+
+            <div class="contact">
+                <h2>Contact information</h2>
+                <h4> TheMacnair@hotmail.com </h4>
+                <h4>Twitter: @tmcnair2</h4>
+                <h4><a href="https://medium.com/@themacnair">My Medium Articles</a></h4>
+                <h4><a href="https://github.com/tamc1337/">Github</a></h4>
+                <h4><a
+                        href="https://en.wikipedia.org/w/index.php?search=taylor+Mcnair&title=Special%3ASearch&go=Go&ns0=1">Wikipedia</a>
+                </h4>
+                <h4><a href="#home">BACK TO THE TOP</a></h4>
+            </div>
+        
+        </div>
+    </div>
+    </div>
+    <div class="footer">
+        <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/portfolio.html">Portfolio</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+        </ul>
+        <ul>
+            <li>
+                <a href="https://twitter.com/tmcnair2"><i class="fa-brands fa-twitter"></i></a>
+            </li>
+            <li>
+                <a href="https://github.com/tamc1337"><i class="fa-brands fa-github"></i></a>
+            </li>
+            <li>
+                <a href="https://medium.com/@themacnair"><i class="fa-brands fa-medium"></i></a>
+            </li>
+            <li>
+                <a href="mailto:themacnair@hotmail.com"><i class="fa-solid fa-envelope"></i></a>
+            </li>
+
+        </ul>
+    </div>
+    <script>
+        const nav = document.getElementById("topNav");
+        window.onscroll = function () {
+            if (window.pageYOffset > 100) {
+                nav.classList.add("sticky");
+            } else {
+                nav.classList.remove("sticky");
+            }
+        };
+        const navButton = document.querySelector('button[aria-expanded]');
+        function toggleNav({ target }) {
+            const expanded = target.getAttribute('aria-expanded') === 'true' || false;
+            navButton.setAttribute('aria-expanded', !expanded);
+        }
+        navButton.addEventListener('click', toggleNav);
+    </script>
+</body>
+
+</html>

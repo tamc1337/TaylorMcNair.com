@@ -15,6 +15,8 @@ h4,
 p,
 h4 a{color: var(--whiteish);}
 
+* li{list-style: none;}
+
 
 .main-content{
     width: 100%;
@@ -71,13 +73,21 @@ h4 a{color: var(--whiteish);}
 [aria-controls="navbarDropdown"]{
     display: none;
 }
-
+#home .title{
+    margin-left: auto;
+    margin-right: auto;
+}
+.title h1{
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+.title h2{font-size: 1.4rem;}
 .title h1,
 .title h2{
-    margin-bottom: 10px;
     background-color: var(--dark-purple);
     border-radius: 10px;
     padding: 1rem 4rem;
+    margin-bottom: 1rem;
 }
 
 .introduction-wrapper{
@@ -89,7 +99,7 @@ h4 a{color: var(--whiteish);}
 .introduction-wrapper .pic1{flex: 1;}
 .introduction-wrapper h2{flex: 1;}
 /* h1, h2, */
-.introduction-wrapper,.portfolio-wrapper, .part4{
+.introduction-wrapper,.portfolio-wrapper, .contact{
     background-color: var(--dark-purple);
     padding: 1rem;
     border-radius: 10px;
@@ -112,8 +122,46 @@ h4 a{color: var(--whiteish);}
 }
 .portfolio-wrapper h3{font-size: 1.8rem;}
 .portfolio-wrapper h4,
-.part4 h4{font-size: 1.4rem;}
+.contact h4{font-size: 1.4rem;}
+.contact-wrapper{ 
+    margin-top: 2rem;
+    display: flex;
+    margin-bottom: 5rem;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.contact ul{line-height: 1.6;}
+.contact h2{
+    font-size: 3rem;
+    font-weight: 400;
+}
+.rainbow1{color: red;}
+.rainbow2{color: orange;}
+.rainbow3{color: yellow;}
+.rainbow4{color: greenyellow;}
+.rainbow5{color: blue;}
 
+
+
+.footer{
+    background-color: var(--whiteish);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.footer ul{
+    display: flex;
+    gap: 2rem;
+    margin-right: 1rem;
+}
+.footer ul li{list-style: none;}
+.footer ul li a{
+    color: var(--dark-purple);
+    text-decoration: none;
+}
 
 @keyframes color{
     0%{
