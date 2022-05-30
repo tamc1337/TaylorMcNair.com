@@ -5,7 +5,7 @@
 }
 
 body{
-    animation: color 30s ease infinite;
+    animation: color 20s ease infinite;
     margin:0 ;
 }
 h1,
@@ -94,7 +94,7 @@ h4 a{color: var(--whiteish);}
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    flex-direction: column;    
 }
 .introduction-wrapper .pic1{flex: 1;}
 .introduction-wrapper h2{flex: 1;}
