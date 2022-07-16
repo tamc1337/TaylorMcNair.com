@@ -40,7 +40,7 @@ h4 a{color: var(--whiteish);}
     margin-bottom: 3px;
 }
 .main-content h2{
-    font-size:2rem;
+    font-size:1.2rem;
     margin: 0 auto;
 }
 .nav{
@@ -112,7 +112,7 @@ h4 a{color: var(--whiteish);}
     margin: 1rem;
 }
 .introduction-wrapper img{
-    width: 70%;
+    width: 45%;
 }
 #portfolio {
     display: flex;
@@ -142,7 +142,7 @@ h4 a{color: var(--whiteish);}
     ;
 }
 .portfolio-wrapper .portfolio h3{
-    margin-top: 5rem;
+    margin-top: 2rem;
 }
 .portfolio-wrapper h3{font-size: 1.8rem;}
 .portfolio-wrapper h4,
