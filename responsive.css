@@ -59,7 +59,11 @@
     }
     .footer{
         flex-wrap: wrap;
-        justify-content: center;}
+        justify-content: center;
+    }
+    .portfolio-wrapper h4{
+          font-size: 1rem;
+    }
 }
 
 @media screen and (max-width:492px) {
@@ -83,7 +87,8 @@
     .nav ul li{
         border: 1px solid var(--whiteish);
     }
-   
+    .portfolio-wrapper{ width: 70%;}
+
     [aria-controls="navbarDropdown"]{
         position: fixed;
         top: 0;
